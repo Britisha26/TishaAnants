@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Science+Gothic:wght@100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+        :root {
+            --navy-deep: #030b33;
+            --navy-mid: #0a1a55;
+            --navy-light: #203a83;
+            --glow: rgba(255, 255, 255, 0.354);
+            --accent: #947bf7;
+            --white: #f8f9fb;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Vollkorn", serif;
+            color: var(--white);
+            background: linear-gradient(160deg, #110333 0%,#0c0a18 50%, #180927  100%);
+        }
+
+        header {
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        header h1 {
+            font-family: "Mea Culpa", cursive;      /*title*/
+            font-size: 4.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 0 0 25px var(--glow);
+        }
+        header p {
+            margin-top: 1rem;
+            font-size: 1.4rem;
+            opacity: 0.85;
+            font-family: "Science Gothic", sans-serif;
+        }
+
+        nav {
+            margin-top: 2rem;
+        }
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: var(--accent);
+            font-size: 1.15rem;
+            transition: 0.3s ease;
+        }
+        nav a:hover {
+            color: rgb(209, 179, 251);
+            text-shadow: 0 0 15px var(--accent);
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 5rem auto;
+            padding: 0 1.5rem;
+        }
+        h2 {
+            font-family: "Playfair Display SC", serif;          /*about headings*/
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            position: relative;
+        }
+        h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 70px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 5px;
+        }
+
+        .about {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        h3 {
+            font-family: "Science Gothic", sans-serif;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(8px);
+            padding: 2rem;
+            border-radius: 16px;
+            transition: 0.35s ease;
+            box-shadow: 0 0 20px rgba(0,0,0,0.25);
+        }
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 0 35px rgba(0,0,0,0.45);
+            border-color: var(--accent);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: 600;
+            color: rgb(152, 152, 233);
+
+            min-height: 3.8rem;     
+            line-height: 1.1;        
+            display: -webkit-box;  
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            align-items: center;
+            display: flex;
+            align-items: center;
+        }
+        .project-card p {
+            line-height: 1.7;
+        }
+        .project-card a {
+            color: var(--white);
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 0.5rem;
+            transition: 0.3s ease;
+        }
+        .project-card a:hover {
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent);
+        }
+        .mail-link {
+            text-decoration: none;
+            color: #cebce1;
+        }
+        footer {
+            text-align: center;
+            padding: 1.75rem;
+            opacity: 0.9;
+            font-family: "Vollkorn", serif;
+
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #cebce1;
+            background: linear-gradient(180deg, #0c051e 0%, #09070b 60%, #351a4d 100%);
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }

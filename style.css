@@ -151,3 +151,7 @@
             background: linear-gradient(180deg, #0c051e 0%, #09070b 60%, #351a4d 100%);
             border-top: 1px solid rgba(0, 0, 0, 0.2);
         }
+
+        @media screen {
+            
+        }
